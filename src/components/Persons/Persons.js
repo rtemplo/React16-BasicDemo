@@ -45,7 +45,7 @@ class Persons extends PureComponent {
         click={this.props.switchName.bind(this, person.name + '!!!', idx)} 
         change={(event) => this.props.changeName(event, person.id)} 
         delete={() => this.props.deletePerson(idx)} 
-        forwardedRef={this.lastPersonRef}
+        ref={this.lastPersonRef}
         />
     )
   }
